@@ -3,3 +3,114 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url("img/yzerman.jpg") no-repeat;
+  background-size: 100% 130%;
+  display: grid;
+  justify-items: center;
+  height: 30vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+  color: red;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+  align-self: end;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+#img-div {
+  background: white;
+  display: grid;
+  justify-items: center;
+  position: relative;
+  z-index: 5;
+  padding: 0 0 1.5rem 0;
+}
+
+.red-bg-stripe {
+  background: #93161a;
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+#image {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border: 3px solid white;
+  border-radius: 25px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+figcaption {
+  color: white;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 10;
+  text-shadow: 2px 2px 2px black;
+}
+
+#tribute-info {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#tribute-info h3 {
+  font-size: 1.125rem;
+  border-bottom: 2px dotted red;
+  padding: 0 1rem 0.5rem;
+  justify-self: center;
+  margin: 2rem 0 3rem;
+}
+
+#tribute-info li {
+  font-size: 1.125rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+
+#tribute-info li:nth-child(odd) {
+  background: #eee;
+}
+
+#tribute-info strong {
+  border-right: 1px dotted red;
+  align-self: center;
+  justify-self: end;
+  padding: 3rem 0.5rem 3rem 0;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+#tribute-info p {
+  align-self: center;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
