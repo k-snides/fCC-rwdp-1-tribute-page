@@ -17,6 +17,8 @@ Fulfill the below user stories and get all of the tests to pass. Give it your ow
 
 You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
+---
+
 <br />
 
 ### User Stories:
@@ -38,3 +40,14 @@ User Story #7: I should see an a element with a corresponding id="tribute-link",
 User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 
 User Story #9: The img element should be centered within its parent element.
+
+<br />
+
+### Completed Project:
+
+https://k-snides.github.io/fCC-rwdp-1-tribute-page/
+
+<br />
+
+To check tests, click on the hamburger icon in top left corner and select
+Tribute Page
