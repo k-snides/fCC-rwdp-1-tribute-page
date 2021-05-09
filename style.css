@@ -16,6 +16,15 @@ header {
   justify-items: center;
   height: 30vh;
 }
+@media screen and (min-width: 600px) {
+  header {
+    background: url("img/yzerman.jpg") no-repeat;
+    background-size: 100% 130%;
+    display: grid;
+    justify-items: center;
+    height: 50vh;
+  }
+}
 
 h1 {
   text-align: center;
@@ -25,6 +34,19 @@ h1 {
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
 }
+@media screen and (min-width: 600px) {
+  h1 {
+    padding: 2rem 0;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px black;
+  }
+}
+@media screen and (min-width: 825px) {
+  h1 {
+    padding: 2rem 0;
+    font-size: 5rem;
+  }
+}
 
 h2 {
   align-self: end;
@@ -33,6 +55,19 @@ h2 {
   color: white;
   font-size: 1rem;
   text-shadow: 2px 2px 2px black;
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    margin-bottom: 0.25rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px black;
+  }
 }
 
 #img-div {
@@ -65,6 +100,16 @@ h2 {
   z-index: 10;
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
 }
+@media screen and (min-width: 600px) {
+  #image {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #image {
+    width: 30%;
+  }
+}
 
 figcaption {
   color: white;
@@ -74,11 +119,32 @@ figcaption {
   z-index: 10;
   text-shadow: 2px 2px 2px black;
 }
+@media screen and (min-width: 600px) {
+  figcaption {
+    padding: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+}
 
 #tribute-info {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
+}
+@media screen and (min-width: 600px) {
+  #tribute-info {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+@media screen and (min-width: 800px) {
+  #tribute-info {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #tribute-info {
+    grid-template-columns: 3fr 6fr 3fr;
+  }
 }
 
 #tribute-info h3 {
@@ -88,12 +154,32 @@ figcaption {
   justify-self: center;
   margin: 2rem 0 3rem;
 }
+@media screen and (min-width: 380px) {
+  #tribute-info h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #tribute-info h3 {
+    font-size: 2rem;
+  }
+}
 
 #tribute-info li {
   font-size: 1.125rem;
   list-style: none;
   display: grid;
   grid-template-columns: 3fr 7fr;
+}
+@media screen and (min-width: 900px) {
+  #tribute-info li {
+    grid-template-columns: 2fr 8fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #tribute-info li {
+    grid-template-columns: 2fr 7fr;
+  }
 }
 
 #tribute-info li:nth-child(odd) {
@@ -108,9 +194,85 @@ figcaption {
   font-size: 0.75rem;
   white-space: nowrap;
 }
+@media screen and (min-width: 369px) {
+  #tribute-info strong {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  #tribute-info strong {
+    padding: 2rem 1rem 2rem 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #tribute-info strong {
+    font-size: 1.25rem;
+  }
+}
 
 #tribute-info p {
   align-self: center;
   margin-left: 0.5rem;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 369px) {
+  #tribute-info p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #tribute-info p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #tribute-info p {
+    font-size: 1.25rem;
+  }
+}
+
+#tribute-info span {
+  color: #93161a;
+}
+#tribute-info article {
+  border: 10px solid red;
+  border-radius: 20px;
+  display: grid;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
+}
+#tribute-info .wing-logo:first-child {
+  background: url("img/red-wings-wing-logo-flipped.png") no-repeat;
+  background-position: 25% 50%;
+}
+#tribute-info .wing-logo:last-child {
+  background: url("img/red-wings-wing-logo.png") no-repeat;
+  background-position: 75% 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(red, black);
+  padding: 3rem 0;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 5rem 0;
+  }
+}
+footer p {
+  width: 80%;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  footer p {
+    font-size: 1.25rem;
+  }
+}
+footer a {
+  color: white;
 }
